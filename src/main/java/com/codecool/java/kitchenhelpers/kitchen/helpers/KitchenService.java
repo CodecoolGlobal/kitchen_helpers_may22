@@ -5,13 +5,13 @@ import com.codecool.java.kitchenhelpers.kitchen.exceptions.OutOfIngredientsExcep
 import com.codecool.java.kitchenhelpers.kitchen.stash.IngredientTypes;
 import lombok.Getter;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
 @Getter
 public class KitchenService {
-    private List<KitchenHelper> kitchenHelpers;
-
+    private final List<KitchenHelper> kitchenHelpers = new ArrayList<>();
 
     public void addHelper(KitchenHelper kitchenHelper) {
         kitchenHelpers.add(kitchenHelper);

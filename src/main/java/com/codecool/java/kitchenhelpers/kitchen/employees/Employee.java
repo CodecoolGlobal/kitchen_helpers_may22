@@ -13,7 +13,12 @@ public abstract class Employee {
     private double salary;
     private Date birthDate;
 
-    public void printTax() {
-        System.out.println(salary * 0.99);
+    public double getTax() {
+        return 0.99 * salary;
+    }
+
+    @Override
+    public String toString() {
+        return name + "Salary: " + salary + " Birth Date: " + birthDate;
     }
 }

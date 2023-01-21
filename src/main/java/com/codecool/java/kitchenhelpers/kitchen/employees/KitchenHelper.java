@@ -18,7 +18,7 @@ public class KitchenHelper extends Employee{
 
     private void randomizeIngredients() {
         Arrays.stream(IngredientTypes.values()).toList().forEach(ingredientTypes -> {
-            ingredients.put(ingredientTypes, new Random().nextInt(0,4));
+            ingredients.put(ingredientTypes, new Random().nextInt(0,1));
         });
     }
 
